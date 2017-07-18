@@ -10,12 +10,12 @@ package com.hua.factory.factory;
  */
 public class FactoryDemoApplication {
     public static void main(String[] args) {
-        SharpFactory sharpFactory = new SharpFactory();
-        Sharpe circle = sharpFactory.getSharpe("CIRCLE");
+        ShapFactory shapFactory = new ShapFactory();
+        Shape circle = shapFactory.getSharpe("CIRCLE");
         circle.draw();
-        Sharpe rectangle = sharpFactory.getSharpe("RECTANGLE");
+        Shape rectangle = shapFactory.getSharpe("RECTANGLE");
         rectangle.draw();
-        Sharpe square = sharpFactory.getSharpe("SQUARE");
+        Shape square = shapFactory.getSharpe("SQUARE");
         square.draw();
     }
 }

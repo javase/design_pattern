@@ -5,6 +5,6 @@ package com.hua.factory.factory;
  *
  * @author limenghua
  */
-public interface Sharpe {
+public interface Shape {
     void draw();
 }

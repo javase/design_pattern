@@ -1,14 +1,15 @@
-package com.hua.factory.factory;
+package com.hua.factory.abstractf;
 
 /**
  * Created by limenghua on 2017/7/18.
  *
  * @author limenghua
  */
-public class SharpFactory {
+public class ShapFactory extends AbstractFactory {
 
-    public Sharpe getSharpe(String sharpType) {
-        switch (sharpType) {
+    @Override
+    public Shape getShape(String shapeType) {
+        switch (shapeType) {
             case "CIRCLE":
                 return new Circle();
 
@@ -24,4 +25,10 @@ public class SharpFactory {
         }// end switch
 
     }
+
+    @Override
+    Color getColor(String color) {
+        return null;
+    }
+
 }

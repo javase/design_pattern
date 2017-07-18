@@ -1,4 +1,4 @@
-package com.hua.factory.factory;
+package com.hua.factory.abstractf;
 
 /**
  * Created by limenghua on 2017/7/18.
