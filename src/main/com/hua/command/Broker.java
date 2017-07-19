@@ -4,8 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by limenghua on 2017/7/18.
- * 命令调用类
+ * Created by limenghua on 2017/7/18.<p/>
+ * 命令调用类,想要调用命令,必然持有命令对象
+ *
  * @author limenghua
  */
 public class Broker {

@@ -2,7 +2,8 @@ package com.hua.command;
 
 /**
  * Created by limenghua on 2017/7/18.
- * 请求类
+ * 请求类<p/>
+ * 命令接收者,用于实际执行命令
  *
  * @author limenghua
  */
