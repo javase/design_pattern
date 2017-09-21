@@ -2,6 +2,7 @@ package com.hua.strategy;
 
 /**
  * Created by limenghua on 2017/3/20.
+ * 策略模式
  * 可以这样描述这一系列策略算法：策略算法是相同行为的不同实现
  */
 public class ClientApplication {

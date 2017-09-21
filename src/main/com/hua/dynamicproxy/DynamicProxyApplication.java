@@ -17,7 +17,7 @@ import java.lang.reflect.Proxy;
  * 1. java.lang.reflect.Proxy: 这是生成代理类的主类，通过 Proxy 类生成的代理类都继承了 Proxy 类，即 DynamicProxyClass extends Proxy。<br/>
  * 2. java.lang.reflect.InvocationHandler: 这里称他为"调用处理器"，他是一个接口，我们动态生成的代理类需要完成的具体内容需要自己定义一个类，而这个类必须实现 InvocationHandler 接口。<br/>
  */
-public class DynamicProxyDemo01 {
+public class DynamicProxyApplication {
     public static void main(String[] args) {
         RealSubject realSubject = new RealSubject();// 创建委托对象
         ProxyHandler handler = new ProxyHandler(realSubject);
