@@ -1,6 +1,11 @@
 package com.hua.singleton.enumsingle;
 
 /**
+ * 默认的枚举实例的创建是线程安全的，但是实例内的各种方法则需要程序员来保证线程安全。
+ * 总的来说，使用枚举单例模式，有三个好处：
+ * 1.实例的创建线程安全，确保单例。
+ * 2.防止被反射创建多个实例。
+ * 3.没有序列化的问题。
  * Created by limenghua on 2017/9/21.
  * @author limenghua
  */
