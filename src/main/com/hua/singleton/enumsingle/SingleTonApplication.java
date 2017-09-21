@@ -1,5 +1,4 @@
-package com.hua.singleton.lazythreadsafe;
-
+package com.hua.singleton.enumsingle;
 
 import java.util.concurrent.CountDownLatch;
 
@@ -14,19 +13,15 @@ public class SingleTonApplication {
 		int createTimes = 10;
 
 		final CountDownLatch latch = new CountDownLatch(createTimes);
-
-		// 检测线程安全性
 		Runnable runnable = new Runnable() {
 			@Override
 			public void run() {
-				Singleton singleton = Singleton.getInstance();
-				System.out.println(String.format("打印当前对象：%s", singleton.toString()));
+				System.out.println(String.format("打印当前枚举对象：%s", Singleton.INSTANCE.toString()));
+				Singleton.INSTANCE.work();
 				latch.countDown();
 			}
 		};
-
 		long start = System.currentTimeMillis();
-
 		for (int i = 0; i < createTimes; i++) {
 			Thread thread = new Thread(runnable);
 			thread.start();
@@ -34,6 +29,5 @@ public class SingleTonApplication {
 
 		latch.await(); // 等待所有线程执行完
 		System.out.println(String.format("获取对象[%d]次耗时：[%dms]", createTimes, (System.currentTimeMillis() - start)));
-
-	}// end main
+	}
 }
