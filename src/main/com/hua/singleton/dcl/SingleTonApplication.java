@@ -18,7 +18,7 @@ public class SingleTonApplication {
 			@Override
 			public void run() {
 				SingletonDCL singleton = SingletonDCL.getInstance();
-				System.out.println(String.format("打印当前对象：%s", singleton.toString()));
+				System.out.println(String.format("[%s]线程打印当前对象：%s", Thread.currentThread().getName(), singleton.toString()));
 				latch.countDown(); // 将count值减1
 			}
 		};

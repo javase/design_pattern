@@ -26,7 +26,7 @@ public class SingletonDCL {
 	public static SingletonDCL getInstance() {
 		// 模拟同步方法的耗时  start
 		try {
-			System.out.println("获取对象实例等待1秒");
+			System.out.println(String.format("[%s]获取对象实例等待1秒", Thread.currentThread().getName()));
 			Thread.sleep(1000);
 		}
 		catch (InterruptedException e) {

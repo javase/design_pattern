@@ -21,7 +21,8 @@ public class SingleTonApplication {
 		Runnable runnable = new Runnable() {
 			@Override
 			public void run() {
-				SingletonLazy.getInstance();
+				SingletonLazy singletonLazy = SingletonLazy.getInstance();
+				System.out.println(String.format("[%s]线程打印当前对象：%s", Thread.currentThread().getName(), singletonLazy.toString()));
 			}
 		};
 		for (int i = 0; i < 10; i++) {

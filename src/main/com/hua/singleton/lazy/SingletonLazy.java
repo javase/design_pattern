@@ -12,7 +12,7 @@ public class SingletonLazy {
 
 	private SingletonLazy() {
 		counter++;
-		System.out.println(String.format("构造对象被调用[%d]次", counter));
+		System.out.println(String.format("线程[%s]调用构造器，对象被创建[%d]次", Thread.currentThread().getName(), counter));
 	}
 
 	public static SingletonLazy getInstance() {
