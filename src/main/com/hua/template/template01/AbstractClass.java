@@ -8,8 +8,9 @@ abstract class AbstractClass {
 	// 抽象方法
 	protected abstract void absMethod();
 
-	protected void hookMethod() {
-
+	// 钩子方法可以控制代码流程，如：返回true、false
+	protected boolean hookMethod() {
+		return true;
 	}
 
 	// 具体方法
@@ -19,8 +20,9 @@ abstract class AbstractClass {
 
 	public void templateMethod() {
 		absMethod();
-		hookMethod();
-		concreteMethod();
+		if (this.hookMethod()) {
+			concreteMethod();
+		}
 	}
 }
 
@@ -32,9 +34,10 @@ class ConcreteClass extends AbstractClass {
 	}
 
 	@Override
-	protected void hookMethod() {
+	protected boolean hookMethod() {
 		super.hookMethod();
 		System.out.println("子类：hookMethod Logic Code!");
+		return true;
 	}
 }
 
