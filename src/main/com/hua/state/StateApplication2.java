@@ -2,7 +2,7 @@ package com.hua.state;
 
 /**
  * Created by limenghua on 2018/2/26.
- * @author limenghua*
+ * @author limenghua
  * <a href="https://www.cnblogs.com/java-my-life/archive/2012/06/08/2538146.html">《JAVA与模式》之状态模式</a>
  */
 public class StateApplication2 {
