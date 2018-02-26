@@ -5,87 +5,91 @@ import java.util.List;
 
 /**
  * Created by limenghua on 2017/4/18.
- * 教程地址： http://www.jianshu.com/p/d55ee6e83d66
+ * 文章链接：<a href="http://www.jianshu.com/p/d55ee6e83d66">设计模式之观察者模式</a>
  */
 class WeatherData implements Subject {
 
-    private List<Observer> observers;
+	private List<Observer> observers;
 
-    private float temperature;//温度
-    private float humidity;//湿度
-    private float pressure;//气压
-    private List<Float> forecastTemperatures;//未来几天的温度
+	private float temperature;//温度
 
-    public WeatherData() {
-        this.observers = new ArrayList<Observer>();
-    }
+	private float humidity;//湿度
 
-    @Override
-    public void registerObserver(Observer observer) {
-        this.observers.add(observer);
-    }
+	private float pressure;//气压
 
-    @Override
-    public void removeObserver(Observer observer) {
-        this.observers.remove(observer);
-    }
+	private List<Float> forecastTemperatures;//未来几天的温度
 
-    @Override
-    public void notifyObservers() {
-        for (Observer observer : observers) {
-            observer.update();
-        }
-    }
+	public WeatherData() {
+		this.observers = new ArrayList<Observer>();
+	}
 
-    public void measurementsChanged() {
-        notifyObservers();
-    }
+	@Override
+	public void registerObserver(Observer observer) {
+		this.observers.add(observer);
+	}
 
-    public void setMeasurements(float temperature, float humidity, float pressure, List<Float> forecastTemperatures) {
-        this.temperature = temperature;
-        this.humidity = humidity;
-        this.pressure = pressure;
-        this.forecastTemperatures = forecastTemperatures;
-        measurementsChanged();
-    }
+	@Override
+	public void removeObserver(Observer observer) {
+		this.observers.remove(observer);
+	}
 
-    public List<Observer> getObservers() {
-        return observers;
-    }
+	@Override
+	public void notifyObservers() {
+		for (Observer observer : observers) {
+			System.out.println(String.format("开始广播通知观察者[%s]", observer.getClass().getSimpleName()));
+			observer.update();
+		}
+	}
 
-    public void setObservers(List<Observer> observers) {
-        this.observers = observers;
-    }
+	public void measurementsChanged() {
+		notifyObservers();
+	}
 
-    public float getTemperature() {
-        return temperature;
-    }
+	public void setMeasurements(float temperature, float humidity, float pressure, List<Float> forecastTemperatures) {
+		this.temperature = temperature;
+		this.humidity = humidity;
+		this.pressure = pressure;
+		this.forecastTemperatures = forecastTemperatures;
+		measurementsChanged();
+	}
 
-    public void setTemperature(float temperature) {
-        this.temperature = temperature;
-    }
+	public List<Observer> getObservers() {
+		return observers;
+	}
 
-    public float getHumidity() {
-        return humidity;
-    }
+	public void setObservers(List<Observer> observers) {
+		this.observers = observers;
+	}
 
-    public void setHumidity(float humidity) {
-        this.humidity = humidity;
-    }
+	public float getTemperature() {
+		return temperature;
+	}
 
-    public float getPressure() {
-        return pressure;
-    }
+	public void setTemperature(float temperature) {
+		this.temperature = temperature;
+	}
 
-    public void setPressure(float pressure) {
-        this.pressure = pressure;
-    }
+	public float getHumidity() {
+		return humidity;
+	}
 
-    public List<Float> getForecastTemperatures() {
-        return forecastTemperatures;
-    }
+	public void setHumidity(float humidity) {
+		this.humidity = humidity;
+	}
 
-    public void setForecastTemperatures(List<Float> forecastTemperatures) {
-        this.forecastTemperatures = forecastTemperatures;
-    }
+	public float getPressure() {
+		return pressure;
+	}
+
+	public void setPressure(float pressure) {
+		this.pressure = pressure;
+	}
+
+	public List<Float> getForecastTemperatures() {
+		return forecastTemperatures;
+	}
+
+	public void setForecastTemperatures(List<Float> forecastTemperatures) {
+		this.forecastTemperatures = forecastTemperatures;
+	}
 }

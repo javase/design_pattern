@@ -1,6 +1,7 @@
 package com.hua.observer;
 
 /**
+ * 当前天气状态展示
  * Created by limenghua on 2017/4/27.
  */
 public class CurrentConditionsDisplay implements Observer, DisplayElement {
@@ -18,8 +19,8 @@ public class CurrentConditionsDisplay implements Observer, DisplayElement {
     @Override
     public void display() {
         System.out.println(String.format("当前温度为：%s℃", this.temperature));
-        System.out.println(String.format("当前湿度为：%s", this.humidity));
-        System.out.println(String.format("当前气压为：%s", this.pressure));
+        System.out.println(String.format("当前湿度为：%s%%", this.humidity));
+        System.out.println(String.format("当前气压为：%shPa", this.pressure));
     }
 
     @Override
