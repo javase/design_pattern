@@ -4,7 +4,7 @@ package com.hua.template.cook;
  * Created by limenghua on 2017/11/14.
  * @author limenghua
  */
-public abstract class CookAbstractClass {
+public abstract class AbstractCookClass {
 
 	// 第一步：倒油是一样的，所以直接实现
 	void pourOil() {

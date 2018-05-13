@@ -4,14 +4,14 @@ package com.hua.template.cook;
  * Created by limenghua on 2017/11/14.
  * @author limenghua
  */
-public class CookCabbage extends CookAbstractClass {
+public class ChineseCabbageCook extends AbstractCookClass {
 	@Override
 	void pourVegtable() {
-		System.out.println("下锅炒的是包菜");
+		System.out.println("下锅的是大白菜");
 	}
 
 	@Override
 	void pourSauce() {
-		System.out.println("包菜放的调料是辣椒");
+		System.out.println("炒大白菜放的调料是十三香");
 	}
 }

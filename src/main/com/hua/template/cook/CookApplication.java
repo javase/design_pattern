@@ -7,11 +7,11 @@ package com.hua.template.cook;
  */
 public class CookApplication {
 	public static void main(String[] args) {
-		CookAbstractClass cabbage = new CookCabbage();
+		AbstractCookClass cabbage = new CabbageCook();
 		cabbage.cookProcess();
 
 		System.out.println("--------------------------------");
-		cabbage = new CookChineseCabbage();
+		cabbage = new ChineseCabbageCook();
 		cabbage.cookProcess();
 	}
 }

@@ -15,7 +15,7 @@ abstract class AbstractClass {
 
 	// 具体方法
 	private final void concreteMethod() {
-		System.out.println("父类：Base Logic Code!");
+		System.out.println("父类具体方法：Base Logic Code!");
 	}
 
 	public void templateMethod() {
