@@ -2,8 +2,8 @@ package com.hua.memo;
 
 /**
  * 白箱备忘录模式
- * Created by limenghua on 2018/2/26.
- * @author limenghua
+ * Created by lerry on 2018/2/26.
+ * @author lerry
  */
 
 /**

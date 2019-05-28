@@ -1,8 +1,8 @@
 package com.hua.adaptor.plug;
 
 /**
- * Created by limenghua on 2017/9/27.
- * @author limenghua
+ * Created by lerry on 2017/9/27.
+ * @author lerry
  */
 public class GBSocket implements GBSocketInterface {
 	@Override

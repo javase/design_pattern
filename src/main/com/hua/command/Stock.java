@@ -1,11 +1,11 @@
 package com.hua.command;
 
 /**
- * Created by limenghua on 2017/7/18.
+ * Created by lerry on 2017/7/18.
  * 请求类<p/>
  * 命令接收者,用于实际执行命令
  *
- * @author limenghua
+ * @author lerry
  */
 public class Stock {
     private String name = "apple";

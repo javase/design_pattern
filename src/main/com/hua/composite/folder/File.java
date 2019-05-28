@@ -2,8 +2,8 @@ package com.hua.composite.folder;
 
 /**
  * 统一接口（抽象类）
- * Created by limenghua on 2017/11/13.
- * @author limenghua
+ * Created by lerry on 2017/11/13.
+ * @author lerry
  */
 public abstract class File {
 	private String name;

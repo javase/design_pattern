@@ -5,8 +5,8 @@ import java.util.List;
 
 /**
  * 一顿饭，持有对餐饮条目的引用，包含一些公用方法
- * Created by limenghua on 2017/9/26.
- * @author limenghua
+ * Created by lerry on 2017/9/26.
+ * @author lerry
  */
 public class Meal {
 	private List<Item> items = new ArrayList<>();

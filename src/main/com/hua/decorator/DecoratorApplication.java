@@ -7,8 +7,8 @@ import com.hua.decorator.impl.RedShapeDecorator;
 
 /**
  * 装饰器模式
- * Created by limenghua on 2017/9/28.
- * @author limenghua
+ * Created by lerry on 2017/9/28.
+ * @author lerry
  */
 public class DecoratorApplication {
 	public static void main(String[] args) {

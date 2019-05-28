@@ -4,8 +4,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Created by limenghua on 2018/2/26.
- * @author limenghua
+ * Created by lerry on 2018/2/26.
+ * @author lerry
  *
  * 需求描述：
  * 考虑一个在线投票系统的应用，要实现控制同一个用户只能投一票，

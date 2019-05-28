@@ -1,9 +1,9 @@
 package com.hua.chain;
 
 /**
- * Created by limenghua on 2016/9/1.
+ * Created by lerry on 2016/9/1.
  *
- * @author limenghua
+ * @author lerry
  */
 public class ConcreteHandler extends Handler {
 

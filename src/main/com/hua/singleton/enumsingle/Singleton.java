@@ -6,8 +6,8 @@ package com.hua.singleton.enumsingle;
  * 1.实例的创建线程安全，确保单例。
  * 2.防止被反射创建多个实例。
  * 3.没有序列化的问题。
- * Created by limenghua on 2017/9/21.
- * @author limenghua
+ * Created by lerry on 2017/9/21.
+ * @author lerry
  */
 public enum Singleton {
 	INSTANCE {

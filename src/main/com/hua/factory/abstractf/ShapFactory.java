@@ -1,9 +1,9 @@
 package com.hua.factory.abstractf;
 
 /**
- * Created by limenghua on 2017/7/18.
+ * Created by lerry on 2017/7/18.
  *
- * @author limenghua
+ * @author lerry
  */
 public class ShapFactory extends AbstractFactory {
 

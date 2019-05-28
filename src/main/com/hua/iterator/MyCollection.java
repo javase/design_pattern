@@ -1,8 +1,8 @@
 package com.hua.iterator;
 
 /**
- * Created by limenghua on 2017/11/14.
- * @author limenghua
+ * Created by lerry on 2017/11/14.
+ * @author lerry
  */
 public class MyCollection implements Collection {
 

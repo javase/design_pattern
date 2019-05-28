@@ -3,8 +3,8 @@ package com.hua.filter;
 import lombok.Data;
 
 /**
- * Created by limenghua on 2017/10/25.
- * @author limenghua
+ * Created by lerry on 2017/10/25.
+ * @author lerry
  */
 @Data
 public class Person {

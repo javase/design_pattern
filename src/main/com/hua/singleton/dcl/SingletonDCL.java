@@ -3,8 +3,8 @@ package com.hua.singleton.dcl;
 import com.hua.singleton.lazythreadsafe.Singleton;
 
 /**
- * Created by limenghua on 2017/9/21.
- * @author limenghua
+ * Created by lerry on 2017/9/21.
+ * @author lerry
  */
 public class SingletonDCL {
 

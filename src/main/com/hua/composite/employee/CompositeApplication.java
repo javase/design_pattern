@@ -1,8 +1,8 @@
 package com.hua.composite.employee;
 
 /**
- * Created by limenghua on 2017/11/9.
- * @author limenghua
+ * Created by lerry on 2017/11/9.
+ * @author lerry
  */
 public class CompositeApplication {
 	public static void main(String[] args) {

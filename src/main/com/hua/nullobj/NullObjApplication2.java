@@ -1,8 +1,8 @@
 package com.hua.nullobj;
 
 /**
- * Created by limenghua on 2018/2/28.
- * @author limenghua
+ * Created by lerry on 2018/2/28.
+ * @author lerry
  */
 public class NullObjApplication2 {
 	public static void main(String[] args) {

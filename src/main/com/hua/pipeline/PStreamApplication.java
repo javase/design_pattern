@@ -1,10 +1,10 @@
 package com.hua.pipeline;
 
 /**
- * Created by limenghua on 2016/10/22.
+ * Created by lerry on 2016/10/22.
  * 计算： （B+C）*B/2 的结果
  *
- * @author limenghua
+ * @author lerry
  */
 public class PStreamApplication {
     public static void main(String[] args) {

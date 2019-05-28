@@ -3,8 +3,8 @@ package com.hua.nullobj;
 import java.util.Scanner;
 
 /**
- * Created by limenghua on 2018/2/28.
- * @author limenghua
+ * Created by lerry on 2018/2/28.
+ * @author lerry
  */
 public class NullObjApplication {
 

@@ -2,8 +2,8 @@ package com.hua.builder.kfc;
 
 /**
  * 冷饮抽象类，实现了餐饮条目接口
- * Created by limenghua on 2017/9/26.
- * @author limenghua
+ * Created by lerry on 2017/9/26.
+ * @author lerry
  */
 public abstract class ColdDrink implements Item {
 

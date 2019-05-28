@@ -1,8 +1,8 @@
 package com.hua.composite.folder;
 
 /**
- * Created by limenghua on 2017/11/13.
- * @author limenghua
+ * Created by lerry on 2017/11/13.
+ * @author lerry
  */
 public class Client {
 

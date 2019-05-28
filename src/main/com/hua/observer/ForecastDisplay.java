@@ -4,7 +4,7 @@ import java.util.List;
 
 /**
  * 预报
- * Created by limenghua on 2017/4/27.
+ * Created by lerry on 2017/4/27.
  */
 public class ForecastDisplay implements Observer, DisplayElement {
     private WeatherData weatherData;

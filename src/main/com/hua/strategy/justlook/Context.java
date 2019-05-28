@@ -1,7 +1,7 @@
 package com.hua.strategy.justlook;
 
 /**
- * Created by limenghua on 2017/3/20.
+ * Created by lerry on 2017/3/20.
  */
 public class Context {
     // 持有一个具体策略的对象

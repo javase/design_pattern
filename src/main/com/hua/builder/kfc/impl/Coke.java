@@ -3,8 +3,8 @@ package com.hua.builder.kfc.impl;
 import com.hua.builder.kfc.ColdDrink;
 
 /**
- * Created by limenghua on 2017/9/26.
- * @author limenghua
+ * Created by lerry on 2017/9/26.
+ * @author lerry
  */
 public class Coke extends ColdDrink {
 	@Override

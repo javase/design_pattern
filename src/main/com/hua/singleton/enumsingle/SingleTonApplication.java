@@ -3,8 +3,8 @@ package com.hua.singleton.enumsingle;
 import java.util.concurrent.CountDownLatch;
 
 /**
- * Created by limenghua on 2017/9/21.
- * @author limenghua
+ * Created by lerry on 2017/9/21.
+ * @author lerry
  */
 public class SingleTonApplication {
 

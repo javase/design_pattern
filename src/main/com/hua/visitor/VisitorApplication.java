@@ -5,8 +5,8 @@ import java.util.List;
 import java.util.Random;
 
 /**
- * Created by limenghua on 2018/3/2.
- * @author limenghua
+ * Created by lerry on 2018/3/2.
+ * @author lerry
  */
 public class VisitorApplication {
 	public static void main(String[] args) {

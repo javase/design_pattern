@@ -7,8 +7,8 @@ package com.hua.singleton.lazy;
  * 而不是随着软件系统的运行或者当类被加载器加载的时候就创建。
  * 当单例类的创建或者单例对象的存在会消耗比较多的资源，常常采用lazy loading策略。
  * 这样做的一个明显好处是提高了软件系统的效率，节约内存资源。
- * Created by limenghua on 2017/9/21.
- * @author limenghua
+ * Created by lerry on 2017/9/21.
+ * @author lerry
  */
 public class SingleTonApplication {
 

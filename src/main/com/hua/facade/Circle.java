@@ -1,8 +1,8 @@
 package com.hua.facade;
 
 /**
- * Created by limenghua on 2017/10/17.
- * @author limenghua
+ * Created by lerry on 2017/10/17.
+ * @author lerry
  */
 public class Circle implements Shape {
 	@Override

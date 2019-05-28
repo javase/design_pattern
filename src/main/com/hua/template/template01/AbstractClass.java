@@ -1,8 +1,8 @@
 package com.hua.template.template01;
 
 /**
- * Created by limenghua on 2017/11/14.
- * @author limenghua
+ * Created by lerry on 2017/11/14.
+ * @author lerry
  */
 abstract class AbstractClass {
 	// 抽象方法

@@ -4,8 +4,8 @@ import com.hua.decorator.Shape;
 import com.hua.decorator.ShapeDecorator;
 
 /**
- * Created by limenghua on 2017/9/28.
- * @author limenghua
+ * Created by lerry on 2017/9/28.
+ * @author lerry
  */
 public class RedShapeDecorator extends ShapeDecorator {
 	public RedShapeDecorator(Shape decoratedShape) {

@@ -1,7 +1,7 @@
 package com.hua.observer;
 
 /**
- * Created by limenghua on 2017/4/18.
+ * Created by lerry on 2017/4/18.
  */
 public interface Subject {
 

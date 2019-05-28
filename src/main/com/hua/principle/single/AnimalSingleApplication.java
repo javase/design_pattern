@@ -7,8 +7,8 @@ package com.hua.principle.single;
  * 采用哪一中呢？其实这真的比较难说，需要根据实际情况来确定。我的原则是：
  * 只有逻辑足够简单，才可以在代码级别上违反单一职责原则；只有类中方法数量足够少，
  * 才可以在方法级别上违反单一职责原则
- * Created by limenghua on 2018/3/2.
- * @author limenghua
+ * Created by lerry on 2018/3/2.
+ * @author lerry
  */
 public class AnimalSingleApplication {
 	public static void main(String[] args) {

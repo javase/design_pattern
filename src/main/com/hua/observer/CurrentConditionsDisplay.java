@@ -2,7 +2,7 @@ package com.hua.observer;
 
 /**
  * 当前天气状态展示
- * Created by limenghua on 2017/4/27.
+ * Created by lerry on 2017/4/27.
  */
 public class CurrentConditionsDisplay implements Observer, DisplayElement {
     private WeatherData weatherData;

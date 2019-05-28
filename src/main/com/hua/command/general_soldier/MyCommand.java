@@ -1,9 +1,9 @@
 package com.hua.command.general_soldier;
 
 /**
- * Created by limenghua on 2017/7/19.
+ * Created by lerry on 2017/7/19.
  * 持有命令接收者对象
- * @author limenghua
+ * @author lerry
  */
 public class MyCommand implements Command {
 

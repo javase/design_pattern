@@ -2,8 +2,8 @@ package com.hua.bridge;
 
 /**
  * 目的地B1
- * Created by limenghua on 2017/10/20.
- * @author limenghua
+ * Created by lerry on 2017/10/20.
+ * @author lerry
  */
 public class AreaWashington implements Bridge {
 	@Override

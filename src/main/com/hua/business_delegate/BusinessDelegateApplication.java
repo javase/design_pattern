@@ -1,8 +1,8 @@
 package com.hua.business_delegate;
 
 /**
- * Created by limenghua on 2018/3/9.
- * @author limenghua
+ * Created by lerry on 2018/3/9.
+ * @author lerry
  */
 public class BusinessDelegateApplication {
 	public static void main(String[] args) {

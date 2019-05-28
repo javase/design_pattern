@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by limenghua on 2017/4/18.
+ * Created by lerry on 2017/4/18.
  * 文章链接：<a href="http://www.jianshu.com/p/d55ee6e83d66">设计模式之观察者模式</a>
  */
 class WeatherData implements Subject {

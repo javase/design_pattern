@@ -1,8 +1,8 @@
 package com.hua.bridge;
 
 /**
- * Created by limenghua on 2017/10/20.
- * @author limenghua
+ * Created by lerry on 2017/10/20.
+ * @author lerry
  */
 public class BridgeApplication {
 	public static void main(String[] args) {

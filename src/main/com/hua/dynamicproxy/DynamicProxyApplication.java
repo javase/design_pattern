@@ -5,7 +5,7 @@ import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 
 /**
- * Created by limenghua on 2017/4/27.<br/>
+ * Created by lerry on 2017/4/27.<br/>
  * 动态代理模式 <br/>
  * 动态代理：代理类是在运行时生成的。也就是说 Java 编译完之后并没有实际的 class 文件，而是在运行时动态生成的类字节码，并加载到JVM中。<br/>
  * Java实现动态代理的大致步骤如下：<br/>

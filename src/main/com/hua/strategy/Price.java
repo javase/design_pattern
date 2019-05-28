@@ -1,7 +1,7 @@
 package com.hua.strategy;
 
 /**
- * Created by limenghua on 2017/3/20.
+ * Created by lerry on 2017/3/20.
  */
 public class Price {
     private MemberStrategy strategy;

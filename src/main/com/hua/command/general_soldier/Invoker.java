@@ -1,10 +1,10 @@
 package com.hua.command.general_soldier;
 
 /**
- * Created by limenghua on 2017/7/19.
+ * Created by lerry on 2017/7/19.
  * <p/>
  * 调用者,相当于将军,持有命令对象,可以发号施令
- * @author limenghua
+ * @author lerry
  */
 public class Invoker {
 

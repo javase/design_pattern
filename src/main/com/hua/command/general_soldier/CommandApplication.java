@@ -1,7 +1,7 @@
 package com.hua.command.general_soldier;
 
 /**
- * Created by limenghua on 2017/7/19.
+ * Created by lerry on 2017/7/19.
  * <p/>
  * 命令模式很好理解，举个例子，司令员下令让士兵去干件事情，从整个事情的角度来考虑，
  * 司令员的作用是，发出口令，口令经过传递，传到了士兵耳朵里，士兵去执行。
@@ -12,7 +12,7 @@ package com.hua.command.general_soldier;
  * <p/>
  * 命令模式的目的就是达到命令的发出者和执行者之间解耦，实现请求和执行分开
  *
- * @author limenghua
+ * @author lerry
  */
 public class CommandApplication {
     public static void main(String[] args) {

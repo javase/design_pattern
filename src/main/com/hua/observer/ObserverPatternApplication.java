@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by limenghua on 2017/4/27. <br/>
+ * Created by lerry on 2017/4/27. <br/>
  * 观察者模式 <br/>
  * 文章链接：<a href="http://www.jianshu.com/p/d55ee6e83d66">设计模式之观察者模式</a>
  *

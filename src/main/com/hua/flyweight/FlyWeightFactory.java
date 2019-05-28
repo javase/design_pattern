@@ -4,8 +4,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Created by limenghua on 2017/11/14.
- * @author limenghua
+ * Created by lerry on 2017/11/14.
+ * @author lerry
  */
 public class FlyWeightFactory {
 	static Map<String, Shape> shapes = new HashMap<>();

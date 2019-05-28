@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by limenghua on 2017/10/25.
- * @author limenghua
+ * Created by lerry on 2017/10/25.
+ * @author lerry
  */
 public class CriteriaMale implements Criteria {
 	public List<Person> meetCriteria(List<Person> persons) {

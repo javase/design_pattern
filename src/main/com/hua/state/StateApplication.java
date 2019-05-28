@@ -1,8 +1,8 @@
 package com.hua.state;
 
 /**
- * Created by limenghua on 2018/2/26.
- * @author limenghua
+ * Created by lerry on 2018/2/26.
+ * @author lerry
  */
 public class StateApplication {
 	public static void main(String[] args) {

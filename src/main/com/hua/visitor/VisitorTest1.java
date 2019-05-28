@@ -1,8 +1,8 @@
 package com.hua.visitor;
 
 /**
- * Created by limenghua on 2018/3/2.
- * @author limenghua
+ * Created by lerry on 2018/3/2.
+ * @author lerry
  */
 public class VisitorTest1 {
 	public static void main(String[] args) {

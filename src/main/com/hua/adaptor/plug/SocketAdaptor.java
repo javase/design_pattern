@@ -2,8 +2,8 @@ package com.hua.adaptor.plug;
 
 /**
  * 电源适配器，实现了德标接口，可以在旅馆中插入到德标的插座上，同时重写德标的充电方法，改用国标接口充电
- * Created by limenghua on 2017/9/27.
- * @author limenghua
+ * Created by lerry on 2017/9/27.
+ * @author lerry
  */
 public class SocketAdaptor implements DBSocketInterface {
 

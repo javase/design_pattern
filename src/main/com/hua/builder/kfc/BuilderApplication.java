@@ -3,8 +3,8 @@ package com.hua.builder.kfc;
 /**
  * 主程序演示
  * 导演类，依赖建造者
- * Created by limenghua on 2017/9/26.
- * @author limenghua
+ * Created by lerry on 2017/9/26.
+ * @author lerry
  */
 public class BuilderApplication {
 	public static void main(String[] args) {

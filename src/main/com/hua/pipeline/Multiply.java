@@ -4,9 +4,9 @@ import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingDeque;
 
 /**
- * Created by limenghua on 2016/10/22.
+ * Created by lerry on 2016/10/22.
  *
- * @author limenghua
+ * @author lerry
  */
 public class Multiply implements Runnable {
 
