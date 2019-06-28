@@ -14,11 +14,11 @@ public class BuilderApplication {
 		Meal vegMeal = mealBuilder.prepareVegMeal();
 		System.out.println("素食餐");
 		vegMeal.showItems();
-		printlnf("总消费：%.2f", vegMeal.getCost());
+		printlnf("总消费：$%.2f", vegMeal.getCost());
 		System.out.println("-------------------------------------");
 		Meal nonVegMeal = mealBuilder.prepareNonVegMeal();
 		System.out.println("肉食餐");
 		nonVegMeal.showItems();
-		printlnf("总消费：%.2f", nonVegMeal.getCost());
+		printlnf("总消费：$%.2f", nonVegMeal.getCost());
 	}
 }

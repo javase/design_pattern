@@ -27,7 +27,7 @@ public class Meal {
 
 	public void showItems() {
 		for (Item item : items) {
-			printlnf("Item:%-10sPacking:%-10s\tPrice:%-10.2f", item.name(), item.packing().pack(), item.price());
+			printlnf("Item:%-10sPacking:%-10s\tPrice:$%-10.2f", item.name(), item.packing().pack(), item.price());
 		}
 	}
 }
