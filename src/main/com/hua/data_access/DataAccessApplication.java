@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * 数据访问对象模式
  * Created by lerry on 2018/3/12.
  * @author lerry
  */

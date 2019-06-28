@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * 过滤器模式
  * Created by lerry on 2017/10/25.
  * @author lerry
  */

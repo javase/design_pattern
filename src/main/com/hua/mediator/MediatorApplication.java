@@ -36,6 +36,9 @@ class User {
 	}
 }
 
+/**
+ * 中介者模式
+ */
 public class MediatorApplication {
 	public static void main(String[] args) {
 

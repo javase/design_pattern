@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
+ * 享元模式
  * Created by lerry on 2017/11/14.
  * @author lerry
  */

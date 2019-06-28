@@ -145,8 +145,8 @@ class HouseMediator extends Mediator {
 }
 
 /**
+ * 中介者模式
  * 客户端测试类
- *
  */
 public class MediatorApplication2 {
 

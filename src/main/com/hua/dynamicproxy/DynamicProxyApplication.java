@@ -56,7 +56,8 @@ class ProxyHandler implements InvocationHandler {
 
     @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
-        System.out.println("before");// 定义预处理的工作，可以根据method的不同进行不同的处理工作
+        // 定义预处理的工作，可以根据method的不同进行不同的处理工作
+        System.out.println("before");
         Object result = method.invoke(subject, args);
         System.out.println("after");
         return result;

@@ -1,6 +1,7 @@
 package com.hua.iterator;
 
 /**
+ * 迭代器模式
  * Created by lerry on 2017/11/14.
  * @author lerry
  */

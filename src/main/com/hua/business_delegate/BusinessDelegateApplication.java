@@ -1,6 +1,7 @@
 package com.hua.business_delegate;
 
 /**
+ * 业务代表模式
  * Created by lerry on 2018/3/9.
  * @author lerry
  */

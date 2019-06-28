@@ -100,7 +100,9 @@ class Context {
 	}
 }
 
-//客户端
+/**
+ * 解释器模式
+ */
 public class InterpreterApplication {
 	public static void main(String[] args) {
 		//(a*b)/(a-b+15000)
