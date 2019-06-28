@@ -1,6 +1,6 @@
 package com.hua.builder.car;
 
-public class Client {
+public class BuilderApplication {
 	public static void main(String[] args) {
 		Director director = new Director();
 		Product product1 = director.getAProduct();
