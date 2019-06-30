@@ -1,10 +1,21 @@
 package com.hua.prototype;
 
 /**
+ * 原型模式
  * Created by lerry on 2017/9/26.
  * @author lerry
  */
-
+public class PropotypeApplication {
+	public static void main(String[] args) {
+		ConcretePropotype concretePropotype = new ConcretePropotype();
+		for (int i = 0; i < 10; i++) {
+			ConcretePropotype clonePropotype = (ConcretePropotype) concretePropotype.clone();
+			System.out.println(String.format("%s.---------------------------------", i + 1));
+			clonePropotype.show();
+			System.out.println(String.format("克隆类：%s", clonePropotype));
+		}
+	}
+}
 
 class Propotype implements Cloneable {
 
@@ -31,14 +42,4 @@ class ConcretePropotype extends Propotype {
 	}
 }
 
-public class PropotypeApplication {
-	public static void main(String[] args) {
-		ConcretePropotype concretePropotype = new ConcretePropotype();
-		for (int i = 0; i < 10; i++) {
-			ConcretePropotype clonePropotype = (ConcretePropotype) concretePropotype.clone();
-			System.out.println(String.format("%s.---------------------------------", i + 1));
-			clonePropotype.show();
-			System.out.println(String.format("克隆类：%s", clonePropotype));
-		}
-	}
-}
+

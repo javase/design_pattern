@@ -1,8 +1,10 @@
 package com.hua.principle.single;
 
 /**
+ * <pre>
  * 我们会发现如果这样修改花销是很大的，除了将原来的类分解之外，还需要修改客户端。
  * 接着看一种不需要修改客户端的方式：AnimalNoModifyClientApplication
+ * </pre>
  * Created by lerry on 2018/3/2.
  * @author lerry
  */

@@ -11,6 +11,7 @@ package com.hua.singleton.enumsingle;
  */
 public enum Singleton {
 	INSTANCE {
+		@Override
 		public void work() {
 			// 模拟同步方法的耗时  start
 			try {

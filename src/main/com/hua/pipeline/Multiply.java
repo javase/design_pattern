@@ -12,7 +12,8 @@ public class Multiply implements Runnable {
 
     public static BlockingQueue<Msg> bq = new LinkedBlockingDeque<Msg>();
 
-    public void run() {
+    @Override
+	public void run() {
         while (true) {
             try {
                 Msg msg = bq.take();

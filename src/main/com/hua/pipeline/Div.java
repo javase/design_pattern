@@ -1,21 +1,20 @@
 package com.hua.pipeline;
 
-/**
- * Created by lerry on 2016/10/22.
- *
- * @author lerry
- */
+
 
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingDeque;
 
 /**
- * Created by ycy on 16/1/16.
+ * Created by lerry on 2016/10/22.
+ *
+ * @author lerry
  */
 public class Div implements Runnable {
 
     public static BlockingQueue<Msg> bq = new LinkedBlockingDeque<Msg>();
 
+    @Override
     public void run() {
         while (true) {
             try {

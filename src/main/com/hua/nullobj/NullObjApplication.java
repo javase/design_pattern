@@ -3,6 +3,7 @@ package com.hua.nullobj;
 import java.util.Scanner;
 
 /**
+ * 空对象模式
  * Created by lerry on 2018/2/28.
  * @author lerry
  */
@@ -14,13 +15,16 @@ public class NullObjApplication {
 	}
 
 	public static void main(String[] args) {
-		while (true) { // 不间断输入，-1退出程序
+		// 不间断输入，-1退出程序
+		while (true) {
 			customer(new StudentFactory());
 		}
 	}
 }
 
-// 首先定义一个为查询和空对象的类定义一个共同的接口
+/**
+ * 首先定义一个为查询和空对象的类定义一个共同的接口
+ */
 interface AbstractStudent {
 	String query();
 }

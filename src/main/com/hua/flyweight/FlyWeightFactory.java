@@ -70,19 +70,19 @@ class IntegerTest {
 	public static void main(String[] args) {
 		Integer a = 1;
 		Integer b = 1;
-		if (a == b) {
+		if (a.equals(b)) {
 			System.out.println("1两个整形变量是一个对象");
 		}
 
 		Integer a1 = 127;
 		Integer b1 = 127;
-		if (a1 == b1) {
+		if (a1.equals(b1)) {
 			System.out.println("2两个整形变量是一个对象");
 		}
 
 		Integer a2 = 128;
 		Integer b2 = 128;
-		if (a2 == b2) {
+		if (a2.equals(b2)) {
 			System.out.println("3两个整形变量是一个对象");
 		}
 	}

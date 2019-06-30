@@ -3,10 +3,52 @@ package com.hua.memo;
 import java.util.Vector;
 
 /**
- * 黑箱备忘录模式
+ * “黑箱”备忘录模式
+ * “黑箱”备忘录模式相比“白箱”备忘录模式有如下区别：
+ * 1.将Memento设成Originator类的内部类；
+ * 2.将Memento的方法全部设成私有方法，这样只有它自己和发起人Originator可以调用；
+ * 3.在外部提供一个标识接口MementoIF给Caretaker以及其他对象，标识接口MementoIF没有提供任何方法，
+ * 因此对外部来说Memento对象的内容都是不可见的。
  * Created by lerry on 2018/2/26.
  * @author lerry
  */
+public class MemoBlackBoxApplication {
+	public static void main(String[] args) {
+		Originator2 originator2 = new Originator2();
+		CareTaker2 careTaker2 = new CareTaker2(originator2);
+
+		originator2.setStates("state0");
+		// 创建一个检查点（备忘录）
+		careTaker2.createMemento();
+
+		originator2.setStates("state1");
+		careTaker2.createMemento();
+
+		originator2.setStates("state2");
+		careTaker2.createMemento();
+
+		originator2.setStates("state3");
+		careTaker2.createMemento();
+
+		originator2.setStates("state4");
+		careTaker2.createMemento();
+
+		System.out.println("初始化状态：\n---------------------");
+		originator2.printAllStates();
+
+		System.out.println("restore to index 3\n---------------------");
+		careTaker2.restoreMemento(3);
+		originator2.printAllStates();
+
+		System.out.println("restore to index 0\n---------------------");
+		careTaker2.restoreMemento(0);
+		originator2.printAllStates();
+
+		System.out.println("restore to index 4\n---------------------");
+		careTaker2.restoreMemento(4);
+		originator2.printAllStates();
+	}
+}
 
 interface MementoIF {
 
@@ -99,50 +141,6 @@ class CareTaker2 {
 	}
 }
 
-/**
- * “黑箱”备忘录模式
- “黑箱”备忘录模式相比“白箱”备忘录模式有如下区别：
- 1.将Memento设成Originator类的内部类；
- 2.将Memento的方法全部设成私有方法，这样只有它自己和发起人Originator可以调用；
- 3.在外部提供一个标识接口MementoIF给Caretaker以及其他对象，标识接口MementoIF没有提供任何方法，
- 因此对外部来说Memento对象的内容都是不可见的。
- */
-public class MemoBlackBox {
-	public static void main(String[] args) {
-		Originator2 originator2 = new Originator2();
-		CareTaker2 careTaker2 = new CareTaker2(originator2);
 
-		originator2.setStates("state0");
-		// 创建一个检查点（备忘录）
-		careTaker2.createMemento();
-
-		originator2.setStates("state1");
-		careTaker2.createMemento();
-
-		originator2.setStates("state2");
-		careTaker2.createMemento();
-
-		originator2.setStates("state3");
-		careTaker2.createMemento();
-
-		originator2.setStates("state4");
-		careTaker2.createMemento();
-
-		System.out.println("初始化状态：\n---------------------");
-		originator2.printAllStates();
-
-		System.out.println("restore to index 3\n---------------------");
-		careTaker2.restoreMemento(3);
-		originator2.printAllStates();
-
-		System.out.println("restore to index 0\n---------------------");
-		careTaker2.restoreMemento(0);
-		originator2.printAllStates();
-
-		System.out.println("restore to index 4\n---------------------");
-		careTaker2.restoreMemento(4);
-		originator2.printAllStates();
-	}
-}
 
 

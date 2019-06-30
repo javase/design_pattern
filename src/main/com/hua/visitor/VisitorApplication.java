@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Random;
 
 /**
+ * 访问者模式
  * Created by lerry on 2018/3/2.
  * @author lerry
  */

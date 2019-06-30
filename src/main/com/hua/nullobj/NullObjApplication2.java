@@ -1,6 +1,7 @@
 package com.hua.nullobj;
 
 /**
+ * 空对象模式
  * Created by lerry on 2018/2/28.
  * @author lerry
  */
@@ -57,7 +58,8 @@ class NullCustomer extends AbstractCustomer {
 }
 
 /**
- * 使用 CustomerFactory，基于客户传递的名字，来获取 RealCustomer 或 NullCustomer 对象。
+ * 使用 CustomerFactory，基于客户传递的名字，
+ * 来获取 RealCustomer 或 NullCustomer 对象。
  */
 class CustomerFactory {
 	public static final String[] names = {"LiuBei", "GuanYu", "ZhangFei"};

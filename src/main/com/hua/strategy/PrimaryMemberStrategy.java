@@ -5,7 +5,8 @@ package com.hua.strategy;
  */
 public class PrimaryMemberStrategy implements MemberStrategy {
 
-    public double calcPrice(double booksPrice) {
+    @Override
+	public double calcPrice(double booksPrice) {
         System.out.println("初级会员没有折扣");
         return booksPrice;
     }

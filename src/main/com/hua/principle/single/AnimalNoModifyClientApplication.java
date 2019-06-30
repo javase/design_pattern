@@ -1,6 +1,7 @@
 package com.hua.principle.single;
 
 /**
+ * <pre>
  * 直接修改类Animal来达成目的虽然违背了单一职责原则，但花销却小的多。
  * 可以看到，这种修改方式要简单的多。
  * 但是却存在着隐患：有一天需要将鱼分为呼吸淡水的鱼和呼吸海水的鱼，
@@ -8,6 +9,7 @@ package com.hua.principle.single;
  * 也许某一天你会发现程序运行的结果变为“牛呼吸水”了。
  * 这种修改方式直接在代码级别上违背了单一职责原则，虽然修改起来最简单，但隐患却是最大的。
  * 接着，看方法级别上符合单一职责原则的修改方式：AnimalSingleApplication
+ * </pre>
  * Created by lerry on 2018/3/2.
  * @author lerry
  */

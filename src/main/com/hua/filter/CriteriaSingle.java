@@ -8,6 +8,7 @@ import java.util.List;
  * @author lerry
  */
 public class CriteriaSingle implements Criteria {
+	@Override
 	public List<Person> meetCriteria(List<Person> persons) {
 		List<Person> singlePersons = new ArrayList<Person>();
 		for (Person singlePerson : persons) {

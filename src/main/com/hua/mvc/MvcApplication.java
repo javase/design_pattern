@@ -1,6 +1,7 @@
 package com.hua.mvc;
 
 /**
+ * MVC 模式代表 Model-View-Controller（模型-视图-控制器） 模式
  * Created by lerry on 2018/3/8.
  * @author lerry
  */

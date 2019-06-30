@@ -1,10 +1,38 @@
 package com.hua.memo;
 
+
 /**
  * 白箱备忘录模式
  * Created by lerry on 2018/2/26.
  * @author lerry
  */
+public class MemoWhiteBoxApplication {
+	public static void main(String[] args) {
+
+		Originator originator = new Originator();
+
+		Caretaker caretaker = new Caretaker();
+
+		//改变发起人的状态
+		originator.setState("on");
+
+		originator.getState();
+
+		//创建备忘录对象，并将发起人对象的状态存储起来
+		caretaker.saveMemento(originator.createMemento());
+
+		//再次改变发起人对象的状态
+		originator.setState("off");
+
+		originator.getState();
+
+		//恢复发起人对象的状态
+		originator.restoreMemento(caretaker.retrieveMemento());
+
+		originator.getState();
+
+	}
+}
 
 /**
  * 备忘录角色
@@ -85,30 +113,4 @@ class Caretaker {
 
 }
 
-public class MemoWhiteBox {
-	public static void main(String[] args) {
 
-		Originator originator = new Originator();
-
-		Caretaker caretaker = new Caretaker();
-
-		//改变发起人的状态
-		originator.setState("on");
-
-		originator.getState();
-
-		//创建备忘录对象，并将发起人对象的状态存储起来
-		caretaker.saveMemento(originator.createMemento());
-
-		//再次改变发起人对象的状态
-		originator.setState("off");
-
-		originator.getState();
-
-		//恢复发起人对象的状态
-		originator.restoreMemento(caretaker.retrieveMemento());
-
-		originator.getState();
-
-	}
-}
