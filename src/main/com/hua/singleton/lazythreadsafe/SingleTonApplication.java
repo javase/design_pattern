@@ -25,10 +25,16 @@ public class SingleTonApplication {
 			}
 		};
 
+		Runnable runnableLambda = () -> {
+			Singleton singleton = Singleton.getInstance();
+			System.out.println(String.format("[%s]线程打印当前对象：%s", Thread.currentThread().getName(), singleton.toString()));
+			latch.countDown();
+		};
+
 		long start = System.currentTimeMillis();
 
 		for (int i = 0; i < createTimes; i++) {
-			Thread thread = new Thread(runnable);
+			Thread thread = new Thread(runnableLambda);
 			thread.start();
 		}// end for
 

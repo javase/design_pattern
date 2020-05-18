@@ -24,11 +24,13 @@ public class BankApplication {
  * 抽象类
  */
 abstract class BaseBank {
+
 	private int number;
 
 	/**
 	 * 模板方法
 	 * 模板方法模式中，迫使子类实现的抽象方法应该声明为protected abstract
+	 * final方法：表示方法不可被子类重写（覆盖）
 	 * @param isEvaluate
 	 */
 	protected final void templateMethodProcess(boolean isEvaluate) {
