@@ -7,7 +7,6 @@ import com.hua.singleton.lazythreadsafe.Singleton;
  * @author lerry
  */
 public class SingletonDCL {
-
 	private volatile static SingletonDCL singleton;
 
 	private static int counter = 0;
@@ -42,5 +41,4 @@ public class SingletonDCL {
 		}// end if
 		return singleton;
 	}
-
 }
