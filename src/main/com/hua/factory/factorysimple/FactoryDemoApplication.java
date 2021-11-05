@@ -1,4 +1,4 @@
-package com.hua.factory.factory;
+package com.hua.factory.factorysimple;
 
 /**
  * <pre>
@@ -15,11 +15,11 @@ package com.hua.factory.factory;
 public class FactoryDemoApplication {
     public static void main(String[] args) {
         ShapFactory shapFactory = new ShapFactory();
-        Shape circle = shapFactory.getSharpe("CIRCLE");
+        Shape circle = shapFactory.createSharpe("CIRCLE");
         circle.draw();
-        Shape rectangle = shapFactory.getSharpe("RECTANGLE");
+        Shape rectangle = shapFactory.createSharpe("RECTANGLE");
         rectangle.draw();
-        Shape square = shapFactory.getSharpe("SQUARE");
+        Shape square = shapFactory.createSharpe("SQUARE");
         square.draw();
     }
 }
