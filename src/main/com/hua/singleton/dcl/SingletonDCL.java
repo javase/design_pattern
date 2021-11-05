@@ -3,6 +3,7 @@ package com.hua.singleton.dcl;
 import com.hua.singleton.lazythreadsafe.SingletonLazySafe;
 
 /**
+ * DCL（双重检验锁）式单例模式
  * Created by lerry on 2017/9/21.
  * @author lerry
  */
@@ -25,7 +26,7 @@ public class SingletonDCL {
 	public static SingletonDCL getInstance() {
 		// 模拟同步方法的耗时  start
 		try {
-			System.out.println(String.format("[%s]获取对象实例等待1秒", Thread.currentThread().getName()));
+			System.out.printf("[%s]获取对象实例等待1秒\n", Thread.currentThread().getName());
 			Thread.sleep(1000);
 		}
 		catch (InterruptedException e) {

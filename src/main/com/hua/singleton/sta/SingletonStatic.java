@@ -1,8 +1,9 @@
 package com.hua.singleton.sta;
 
 /**
- * 静态内部类即使SingletonStatic类被加载也不会创建单例对象，
- * 除非调用里面的getInstance()方法
+ * 静态内部类方式。
+ * 即使外部类SingletonStatic类被加载也不会创建单例对象，
+ * 除非调用里面的getInstance()方法。这样可以实现懒加载
  * Created by lerry on 2017/9/21.
  * @author lerry
  */

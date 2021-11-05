@@ -12,7 +12,8 @@ public class SingleTonApplication {
 		Runnable runnable = new Runnable() {
 			@Override
 			public void run() {
-				SingletonStatic.getInstance();
+				SingletonStatic singleton = SingletonStatic.getInstance();
+				System.out.println(String.format("[%s]线程打印当前对象：%s", Thread.currentThread().getName(), singleton.toString()));
 			}
 		};
 		for (int i = 0; i < 10; i++) {
