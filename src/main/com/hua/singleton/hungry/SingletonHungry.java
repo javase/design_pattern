@@ -14,11 +14,11 @@ public class SingletonHungry {
 
 	private static SingletonHungry singleton = new SingletonHungry();
 
-	private static int counter = 0;
+	public volatile int counter = 0;
 
 	private SingletonHungry() {
-		counter++;
-		System.out.println(String.format("构造对象被调用[%d]次", counter));
+		++counter;
+		System.out.printf("构造方法被线程：[%s] 调用%s次 \n", Thread.currentThread().getName(), counter);
 	}
 
 	public static SingletonHungry getInstance() {
