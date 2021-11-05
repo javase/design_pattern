@@ -1,5 +1,7 @@
 package com.hua.singleton.lazy;
 
+import java.io.IOException;
+
 /**
  * 单例模式-懒汉式-非线程安全
  * 顾名思义，lazy loading（延迟加载，一说懒加载），
@@ -22,13 +24,19 @@ public class SingleTonApplication {
 			@Override
 			public void run() {
 				SingletonLazy singletonLazy = SingletonLazy.getInstance();
-				System.out.println(String.format("[%s]线程打印当前对象：%s", Thread.currentThread().getName(), singletonLazy.toString()));
+				System.out.printf("[%s]线程打印当前对象：%s\n", Thread.currentThread().getName(), singletonLazy.toString());
 			}
 		};
 		for (int i = 0; i < 10; i++) {
 			Thread thread = new Thread(runnable);
 			thread.start();
 		}// end for
+		try {
+			System.in.read();
+		}
+		catch (IOException e) {
+			e.printStackTrace();
+		}
 
 	}// end main
 }

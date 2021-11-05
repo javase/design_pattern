@@ -12,7 +12,7 @@ package com.hua.singleton.hungry;
  */
 public class SingletonHungry {
 
-	private static SingletonHungry singleton = new SingletonHungry();
+	private static final SingletonHungry singleton = new SingletonHungry();
 
 	public volatile int counter = 0;
 
