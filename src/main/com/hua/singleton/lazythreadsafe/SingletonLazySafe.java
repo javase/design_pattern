@@ -4,13 +4,13 @@ package com.hua.singleton.lazythreadsafe;
  * Created by lerry on 2017/9/21.
  * @author lerry
  */
-public class Singleton {
+public class SingletonLazySafe {
 
-	private static Singleton singleton = null;
+	private static SingletonLazySafe singleton = null;
 
 	private static int counter = 0;
 
-	private Singleton() {
+	private SingletonLazySafe() {
 		counter++;
 		System.out.println(String.format("构造对象被调用[%d]次", counter));
 	}
@@ -20,7 +20,7 @@ public class Singleton {
 	 * 这样导致了若干个线程需要耗费等待进入临界区（被锁住的代码块）的时间。
 	 * @return
 	 */
-	public static synchronized Singleton getInstance() {
+	public static synchronized SingletonLazySafe getInstance() {
 		// 模拟同步方法的耗时  start
 		try {
 			System.out.println(String.format("[%s]获取对象实例等待1秒", Thread.currentThread().getName()));
@@ -31,7 +31,7 @@ public class Singleton {
 		}
 		// 模拟同步方法的耗时  end
 		if (singleton == null) {
-			singleton = new Singleton();
+			singleton = new SingletonLazySafe();
 		}
 		return singleton;
 	}

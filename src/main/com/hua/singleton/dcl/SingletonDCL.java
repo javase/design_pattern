@@ -1,6 +1,6 @@
 package com.hua.singleton.dcl;
 
-import com.hua.singleton.lazythreadsafe.Singleton;
+import com.hua.singleton.lazythreadsafe.SingletonLazySafe;
 
 /**
  * Created by lerry on 2017/9/21.
@@ -33,7 +33,7 @@ public class SingletonDCL {
 		}
 		// 模拟同步方法的耗时  end
 		if (singleton == null) {
-			synchronized (Singleton.class) {
+			synchronized (SingletonLazySafe.class) {
 				if (singleton == null) {
 					singleton = new SingletonDCL();
 				}// end if

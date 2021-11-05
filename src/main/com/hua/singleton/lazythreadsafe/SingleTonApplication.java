@@ -19,14 +19,14 @@ public class SingleTonApplication {
 		Runnable runnable = new Runnable() {
 			@Override
 			public void run() {
-				Singleton singleton = Singleton.getInstance();
+				SingletonLazySafe singleton = SingletonLazySafe.getInstance();
 				System.out.println(String.format("[%s]线程打印当前对象：%s", Thread.currentThread().getName(), singleton.toString()));
 				latch.countDown();
 			}
 		};
 
 		Runnable runnableLambda = () -> {
-			Singleton singleton = Singleton.getInstance();
+			SingletonLazySafe singleton = SingletonLazySafe.getInstance();
 			System.out.println(String.format("[%s]线程打印当前对象：%s", Thread.currentThread().getName(), singleton.toString()));
 			latch.countDown();
 		};
