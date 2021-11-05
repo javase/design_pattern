@@ -16,7 +16,7 @@ public class SingleTonApplication {
 		Runnable runnable = new Runnable() {
 			@Override
 			public void run() {
-				System.out.println(String.format("打印当前枚举对象：%s", Singleton.INSTANCE.toString()));
+				System.out.println(String.format("打印当前枚举对象的hashCode：%s", Singleton.INSTANCE.hashCode()));
 				Singleton.INSTANCE.work();
 				latch.countDown();
 			}
