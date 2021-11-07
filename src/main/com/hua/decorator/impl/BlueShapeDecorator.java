@@ -15,10 +15,10 @@ public class BlueShapeDecorator extends ShapeDecorator {
 	@Override
 	public void draw() {
 		decoratedShape.draw();
-		setRedBorder();
+		setBlueBorder();
 	}
 
-	private void setRedBorder() {
+	private void setBlueBorder() {
 		System.out.println("Blue border");
 	}
 }
