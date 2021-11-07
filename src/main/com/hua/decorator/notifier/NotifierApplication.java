@@ -11,14 +11,13 @@ public class NotifierApplication {
 						new DatabaseNotifier()
 				)
 		);
-		dbNotifier.send("vvv");
-
+		dbNotifier.send("vivivi...");
+		System.out.println("------------------------");
 		Notifier webNotifier = new QQDecoratorImpl(
 				new EmailDecoratorImpl(
 						new WebApplicationNotifier()
 				)
 		);
-		webNotifier.send("vvv");
-
+		webNotifier.send("dididi...");
 	}
 }

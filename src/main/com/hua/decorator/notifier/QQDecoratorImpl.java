@@ -11,6 +11,7 @@ public class QQDecoratorImpl extends BaseDecorator {
 
 	@Override
 	public void send(String message) {
+		super.send(message);
 		System.out.printf("使用QQ发送通知：%s\n", message);
 	}
 }

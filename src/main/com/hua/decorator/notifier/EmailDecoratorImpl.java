@@ -11,6 +11,7 @@ public class EmailDecoratorImpl extends BaseDecorator {
 
 	@Override
 	public void send(String message) {
+		super.send(message);
 		System.out.printf("使用邮件发送通知：%s\n", message);
 	}
 }
