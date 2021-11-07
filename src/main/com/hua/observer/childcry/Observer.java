@@ -4,5 +4,5 @@ package com.hua.observer.childcry;
  * 观察者、订阅者
  */
 interface Observer {
-	void actionOnWakeUp(WakeUpEvent event);
+	void actionOnWakeUp(Event event);
 }

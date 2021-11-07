@@ -10,7 +10,7 @@ class Dad implements Observer {
 	}
 
 	@Override
-	public void actionOnWakeUp(WakeUpEvent event) {
+	public void actionOnWakeUp(Event event) {
 		feed();
 	}
 }

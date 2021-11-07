@@ -30,7 +30,7 @@ class Child {
 	public void wakeUp() {
 		cry = true;
 		System.out.println("宝宝醒了");
-		WakeUpEvent event = new WakeUpEvent(System.currentTimeMillis(), "bed", this);
+		Event event = new WakeUpEvent(System.currentTimeMillis(), "bed", this);
 
 		for (Observer o : observers) {
 			o.actionOnWakeUp(event);
