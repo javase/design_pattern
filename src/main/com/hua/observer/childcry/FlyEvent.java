@@ -5,14 +5,14 @@ package com.hua.observer.childcry;
  * @author lerry
  */
 public class FlyEvent extends Event<Bird> {
-	public FlyEvent(Bird bird) {
-		this.bird = bird;
+	public FlyEvent(Bird source) {
+		this.source = source;
 	}
 
-	private Bird bird;
+	private Bird source;
 
 	@Override
 	Bird getSource() {
-		return bird;
+		return source;
 	}
 }
