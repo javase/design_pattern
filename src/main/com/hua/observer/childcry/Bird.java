@@ -16,7 +16,7 @@ public class Bird {
 
 	public void fly() {
 		System.out.println("小鸟从墙头起飞了");
-		Event<Bird> flyEvent = new FlyEvent();
+		Event<Bird> flyEvent = new FlyEvent(this);
 		for (Observer observer : observerList) {
 			observer.actionOnEvent(flyEvent);
 		}
