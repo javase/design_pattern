@@ -2,6 +2,7 @@ package com.hua.observer.childcry;
 
 /**
  * 具体行为-醒来
+ * 事件类
  */
 class WakeUpEvent extends Event<Child> {
 	/**

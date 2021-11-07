@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Source对象
+ * Source对象（事件源对象）
  * 持有所有的观察者（订阅者）
  * 相当于发布者（Publisher）
  */
