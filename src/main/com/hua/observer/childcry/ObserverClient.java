@@ -10,5 +10,8 @@ public class ObserverClient {
 		Child c = new Child();
 		//do sth
 		c.wakeUp();
+		System.out.println("--------");
+		Bird bird = new Bird();
+		bird.fly();
 	}
 }

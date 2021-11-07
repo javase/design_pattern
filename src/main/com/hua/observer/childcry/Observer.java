@@ -9,5 +9,5 @@ interface Observer {
 	 * 做出一系列反应
 	 * @param event
 	 */
-	void actionOnWakeUp(Event event);
+	void actionOnEvent(Event event);
 }

@@ -10,7 +10,7 @@ class Mum implements Observer {
 	}
 
 	@Override
-	public void actionOnWakeUp(Event event) {
+	public void actionOnEvent(Event event) {
 		hug();
 	}
 }

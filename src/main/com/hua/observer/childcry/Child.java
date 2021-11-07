@@ -33,7 +33,7 @@ class Child {
 		Event event = new WakeUpEvent(System.currentTimeMillis(), "bed", this);
 
 		for (Observer o : observers) {
-			o.actionOnWakeUp(event);
+			o.actionOnEvent(event);
 		}
 	}
 }
