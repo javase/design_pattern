@@ -6,13 +6,13 @@ package com.hua.composite.tree;
  */
 public class Client {
 	public static void main(String[] args) {
-		BranchNode root = new BranchNode("root");
-		BranchNode chapter1 = new BranchNode("chapter1");
-		BranchNode chapter2 = new BranchNode("chapter2");
+		CompositeNode root = new CompositeNode("root");
+		CompositeNode chapter1 = new CompositeNode("chapter1");
+		CompositeNode chapter2 = new CompositeNode("chapter2");
 		Node r1 = new LeafNode("r1");
 		Node c11 = new LeafNode("c11");
 		Node c12 = new LeafNode("c12");
-		BranchNode b21 = new BranchNode("section21");
+		CompositeNode b21 = new CompositeNode("section21");
 		Node c211 = new LeafNode("c211");
 		Node c212 = new LeafNode("c212");
 
@@ -40,8 +40,8 @@ public class Client {
 		}
 		b.print();
 
-		if (b instanceof BranchNode) {
-			for (Node n : ((BranchNode) b).nodes) {
+		if (b instanceof CompositeNode) {
+			for (Node n : ((CompositeNode) b).nodes) {
 				tree(n, depth + 1);
 			}
 		}
