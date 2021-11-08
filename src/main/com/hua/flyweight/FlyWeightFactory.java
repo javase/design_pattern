@@ -70,20 +70,32 @@ class IntegerTest {
 	public static void main(String[] args) {
 		Integer a = 1;
 		Integer b = 1;
-		if (a.equals(b)) {
-			System.out.println("1两个整形变量是一个对象");
+		if (a == b) {
+			System.out.println("a/b两个整型变量是一个对象");
 		}
 
 		Integer a1 = 127;
-		Integer b1 = 127;
-		if (a1.equals(b1)) {
-			System.out.println("2两个整形变量是一个对象");
+		Integer b1 = Integer.valueOf(127);
+		if (a1 == b1) {
+			System.out.println("a1/b1两个整型变量是一个对象");
 		}
 
 		Integer a2 = 128;
-		Integer b2 = 128;
-		if (a2.equals(b2)) {
-			System.out.println("3两个整形变量是一个对象");
+		Integer b2 = Integer.valueOf(128);
+		if (a2 == b2) {
+			System.out.println("a2/b2两个整型变量是一个对象");
+		}
+		else {
+			System.out.printf("a2/b2两个整型变量不是同一个对象 %s:%s\n", a2.toString(), b2.toString());
+		}
+
+		Integer a3 = Integer.MAX_VALUE;
+		Integer b3 = Integer.MAX_VALUE;
+		if (a3 == b3) {
+			System.out.println("a3/b3两个整型变量是一个对象");
+		}
+		else {
+			System.out.printf("a3/b3两个整型变量不是同一个对象 %s:%s\n", a3.toString(), b3.toString());
 		}
 	}
 }
