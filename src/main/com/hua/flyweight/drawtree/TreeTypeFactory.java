@@ -8,7 +8,7 @@ import java.util.Map;
  * 享元工厂
  * 封装创建享元的复杂机制
  */
-public class TreeFactory {
+public class TreeTypeFactory {
 	static Map<String, TreeType> treeTypes = new HashMap<>();
 
 	public static TreeType getTreeType(String name, Color color, String otherTreeData) {
