@@ -47,17 +47,17 @@ public class LinkedList_<E> implements Collection_<E> {
 	}
 
 	private class LinkedListIterator<E> implements Iterator_<E> {
-		private Node<E> cucurrentNode = head;
+		private Node<E> currentNode = head;
 
 		@Override
 		public boolean hasNext() {
-			return cucurrentNode.next != null;
+			return currentNode.next != null;
 		}
 
 		@Override
 		public E next() {
-			cucurrentNode = cucurrentNode.next;
-			return cucurrentNode.o;
+			currentNode = currentNode.next;
+			return currentNode.o;
 		}
 	}
 }
