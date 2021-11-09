@@ -3,7 +3,7 @@ package com.hua.iterator.v7;
 /**
  * 相比数组，这个容器不用考虑边界问题，可以动态扩展
  */
-class LinkedList_ implements Collection_ {
+public class LinkedList_<E> implements Collection_<E> {
 	Node head = null;
 
 	Node tail = null;
@@ -12,7 +12,7 @@ class LinkedList_ implements Collection_ {
 	private int size = 0;
 
 	@Override
-	public void add(Object o) {
+	public void add(E o) {
 		Node n = new Node(o);
 		n.next = null;
 
@@ -26,12 +26,12 @@ class LinkedList_ implements Collection_ {
 		size++;
 	}
 
-	private class Node {
-		private Object o;
+	private class Node<E> {
+		private E o;
 
-		Node next;
+		Node<E> next;
 
-		public Node(Object o) {
+		public Node(E o) {
 			this.o = o;
 		}
 	}
@@ -43,6 +43,21 @@ class LinkedList_ implements Collection_ {
 
 	@Override
 	public Iterator_ iterator() {
-		return null;
+		return new LinkedListIterator<E>();
+	}
+
+	private class LinkedListIterator<E> implements Iterator_<E> {
+		private Node mark = head;
+
+		@Override
+		public boolean hasNext() {
+			return mark.next != null;
+		}
+
+		@Override
+		public E next() {
+			mark = mark.next;
+			return (E) mark.o;
+		}
 	}
 }
