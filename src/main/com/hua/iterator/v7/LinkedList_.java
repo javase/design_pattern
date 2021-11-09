@@ -47,7 +47,7 @@ public class LinkedList_<E> implements Collection_<E> {
 	}
 
 	private class LinkedListIterator<E> implements Iterator_<E> {
-		private Node cucurrentNode = head;
+		private Node<E> cucurrentNode = head;
 
 		@Override
 		public boolean hasNext() {
@@ -57,7 +57,7 @@ public class LinkedList_<E> implements Collection_<E> {
 		@Override
 		public E next() {
 			cucurrentNode = cucurrentNode.next;
-			return (E) cucurrentNode.o;
+			return cucurrentNode.o;
 		}
 	}
 }
