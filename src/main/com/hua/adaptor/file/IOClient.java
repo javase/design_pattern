@@ -10,7 +10,7 @@ import java.io.InputStreamReader;
  * created at 2021-11-12 12:45
  * @author lerry
  */
-public class Client {
+public class IOClient {
 	public static void main(String[] args) throws IOException {
 		FileInputStream fis = new FileInputStream("/Users/lerry/Temp/adaptor.txt");
 		InputStreamReader isr = new InputStreamReader(fis);

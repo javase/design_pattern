@@ -5,7 +5,7 @@ package com.hua.adaptor.plug;
  * Created by lerry on 2017/9/27.
  * @author lerry
  */
-public class AdaptorApplication {
+public class AdaptorClient {
 
 	public static void main(String[] args) {
 		DBSocketInterface dbSocket = new DBSocket();
