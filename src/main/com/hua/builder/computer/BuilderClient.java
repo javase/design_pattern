@@ -23,5 +23,9 @@ public class BuilderClient {
 		director.makeComputer(lenovoBuilder);
 		Computer lenovoComputer = lenovoBuilder.getComputer();
 		System.out.println("lenovo computer:" + lenovoComputer.toString());
+
+		StringBuilder stringBuilder = new StringBuilder();
+		stringBuilder.append("");
+		stringBuilder.toString();
 	}
 }
