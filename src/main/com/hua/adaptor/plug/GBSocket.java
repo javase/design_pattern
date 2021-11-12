@@ -1,6 +1,7 @@
 package com.hua.adaptor.plug;
 
 /**
+ * 国标插座
  * Created by lerry on 2017/9/27.
  * @author lerry
  */
