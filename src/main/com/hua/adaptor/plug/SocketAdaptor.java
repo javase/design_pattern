@@ -27,6 +27,7 @@ public class SocketAdaptor implements DBSocketInterface {
 	 */
 	@Override
 	public void powerWithTwoRound() {
+		// 实现的是德标的方法，执行的是国标的方法
 		gbSocketInterface.powerWithThreeFlat();
 	}
 }
