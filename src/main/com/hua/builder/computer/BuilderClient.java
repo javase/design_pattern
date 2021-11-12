@@ -12,14 +12,14 @@ public class BuilderClient {
 		//1
 		Director director = new Director();
 		//2
-		ComputerBuilder builder = new MacComputerBuilder("I7处理器", "三星DDR4");
+		BaseBuilder builder = new MacComputerBuilder("I7处理器", "三星DDR4");
 		//3
 		director.makeComputer(builder);
 		//4
 		Computer macComputer = builder.getComputer();
 		System.out.println("mac computer:" + macComputer.toString());
 
-		ComputerBuilder lenovoBuilder = new LenovoComputerBuilder("龙芯处理器", "海力士DDR4");
+		BaseBuilder lenovoBuilder = new LenovoComputerBuilder("龙芯处理器", "海力士DDR4");
 		director.makeComputer(lenovoBuilder);
 		Computer lenovoComputer = lenovoBuilder.getComputer();
 		System.out.println("lenovo computer:" + lenovoComputer.toString());

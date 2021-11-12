@@ -5,7 +5,7 @@ package com.hua.builder.computer;
  * 具体生成器也可以构造不遵循通用接口的产品。
  * 苹果电脑
  */
-public class MacComputerBuilder extends ComputerBuilder {
+public class MacComputerBuilder extends BaseBuilder {
 	private Computer computer;
 
 	public MacComputerBuilder(String cpu, String ram) {

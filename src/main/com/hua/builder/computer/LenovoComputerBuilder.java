@@ -5,7 +5,7 @@ package com.hua.builder.computer;
  * 具体生成器也可以构造不遵循通用接口的产品。
  * 联想电脑
  */
-public class LenovoComputerBuilder extends ComputerBuilder {
+public class LenovoComputerBuilder extends BaseBuilder {
 	private Computer computer;
 
 	public LenovoComputerBuilder(String cpu, String ram) {

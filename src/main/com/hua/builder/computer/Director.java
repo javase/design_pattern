@@ -5,7 +5,7 @@ package com.hua.builder.computer;
  */
 public class Director {
 
-    public void makeComputer(ComputerBuilder builder){
+    public void makeComputer(BaseBuilder builder){
         builder.setUsbCount();
         builder.setDisplay();
         builder.setKeyboard();
