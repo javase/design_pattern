@@ -4,11 +4,17 @@ package com.hua.command;
 /**
  * Created by lerry on 2017/7/18.
  * 具体命令,持有实际执行命令的命令接收者(Stock)
+ *
+ * 具体命令 （Concrete Commands） 会实现各种类型的请求。
+ * 具体命令自身并不完成工作， 而是会将调用委派给一个业务逻辑对象。(调用Stock的方法)
+ * 但为了简化代码， 这些类可以进行合并。
+ * 接收对象执行方法所需的参数可以声明为具体命令的成员变量。
+ * 你可以将命令对象设为不可变， 仅允许通过构造函数对这些成员变量进行初始化。
  * @author lerry
  */
 public class BuyStock implements Order{
 
-    private Stock stock;
+    private final Stock stock;
 
     public BuyStock(Stock stock) {
         this.stock = stock;
