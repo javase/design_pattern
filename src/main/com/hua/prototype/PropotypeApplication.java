@@ -10,9 +10,9 @@ public class PropotypeApplication {
 		ConcretePropotype concretePropotype = new ConcretePropotype();
 		for (int i = 0; i < 10; i++) {
 			ConcretePropotype clonePropotype = (ConcretePropotype) concretePropotype.clone();
-			System.out.println(String.format("%s.---------------------------------", i + 1));
+			System.out.printf("%s.---------------------------------\n", i + 1);
 			clonePropotype.show();
-			System.out.println(String.format("克隆类：%s", clonePropotype));
+			System.out.printf("克隆类：%s\n", clonePropotype);
 		}
 	}
 }
