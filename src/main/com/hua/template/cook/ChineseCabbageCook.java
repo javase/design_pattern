@@ -2,6 +2,7 @@ package com.hua.template.cook;
 
 /**
  * 大白菜
+ * 具体类 （Concrete­Class） 可以重写所有步骤， 但不能重写模板方法自身。
  * Created by lerry on 2017/11/14.
  * @author lerry
  */

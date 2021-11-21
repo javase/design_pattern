@@ -1,7 +1,5 @@
 package com.hua.template.cook;
 
-import static com.hua.util.Print.*;
-
 /**
  * <pre>
  * 模板方法模式
@@ -10,12 +8,12 @@ import static com.hua.util.Print.*;
  * Created by lerry on 2017/11/14.
  * @author lerry
  */
-public class CookApplication {
+public class CookClient {
 	public static void main(String[] args) {
 		AbstractCookClass cabbage = new CabbageCook();
 		cabbage.cookProcess();
 
-		print("--------------------------------");
+		System.out.println("--------------------------------");
 		cabbage = new ChineseCabbageCook();
 		cabbage.cookProcess();
 	}

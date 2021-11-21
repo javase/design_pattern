@@ -1,6 +1,8 @@
 package com.hua.template.cook;
 
 /**
+ * 抽象类 （Abstract­Class） 会声明作为算法步骤的方法， 以及依次调用它们的实际模板方法。
+ * 算法步骤可以被声明为 抽象类型， 也可以提供一些默认实现。
  * Created by lerry on 2017/11/14.
  * @author lerry
  */
