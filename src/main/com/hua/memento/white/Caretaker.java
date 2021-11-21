@@ -12,12 +12,11 @@ class Caretaker {
 
 	private Originator originator;
 
+	private Stack<Memento> history;
+
 	public Caretaker(Originator originator) {
 		this.originator = originator;
 	}
-
-	//	private Memento[] history;
-	private Stack<Memento> history;
 
 	/**
 	 * 恢复
