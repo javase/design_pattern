@@ -1,4 +1,4 @@
-package com.hua.dynamicproxy;
+package com.hua.proxy.dynamicproxy;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
