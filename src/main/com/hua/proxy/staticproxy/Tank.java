@@ -2,6 +2,9 @@ package com.hua.proxy.staticproxy;
 
 import java.util.Random;
 
+/**
+ * 服务 （Service） 类提供了一些实用的业务逻辑。
+ */
 public class Tank implements Movable {
 
     /**
