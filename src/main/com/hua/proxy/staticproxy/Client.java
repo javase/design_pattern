@@ -8,11 +8,9 @@ package com.hua.proxy.staticproxy;
  */
 public class Client {
 	public static void main(String[] args) {
-
 		Tank tank = new Tank();
 		TankTimeProxy ttp = new TankTimeProxy(tank);
 		TankLogProxy tlp = new TankLogProxy(ttp);
 		tlp.move();
-
 	}
 }
