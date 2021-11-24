@@ -14,9 +14,9 @@ class TankLogProxy implements Movable {
 
     @Override
     public void move() {
-        System.out.println("start moving...");
+        System.out.println("log>>start moving...");
         realMovable.move();
         long end = System.currentTimeMillis();
-        System.out.println("stopped!");
+        System.out.println("log>>stopped!");
     }
 }

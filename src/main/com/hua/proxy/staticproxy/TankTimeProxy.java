@@ -17,6 +17,6 @@ class TankTimeProxy implements Movable {
 		long start = System.currentTimeMillis();
 		realMovable.move();
 		long end = System.currentTimeMillis();
-		System.out.println(end - start);
+		System.out.println("time>>" + (end - start));
 	}
 }
