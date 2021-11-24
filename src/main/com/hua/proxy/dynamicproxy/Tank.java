@@ -42,7 +42,7 @@ public class Tank implements Movable {
 
 	public static void main(String[] args) {
 		Tank tank = new Tank();
-		// 1.8 sun.misc.ProxyGenerator.saveGeneratedFiles
+		// jdk 1.8 sun.misc.ProxyGenerator.saveGeneratedFiles
 		// jdk 11 jdk.proxy.ProxyGenerator.saveGeneratedFiles
 		System.getProperties().put("sun.misc.ProxyGenerator.saveGeneratedFiles", "true");
 
