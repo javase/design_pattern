@@ -6,16 +6,16 @@ package com.hua.proxy.staticproxy;
  * 通常情况下， 代理会对其服务对象的整个生命周期进行管理。
  */
 class TankTimeProxy implements Movable {
-	Movable m;
+	Movable realMovable;
 
-	public TankTimeProxy(Movable m) {
-		this.m = m;
+	public TankTimeProxy(Movable realMovable) {
+		this.realMovable = realMovable;
 	}
 
 	@Override
 	public void move() {
 		long start = System.currentTimeMillis();
-		m.move();
+		realMovable.move();
 		long end = System.currentTimeMillis();
 		System.out.println(end - start);
 	}
