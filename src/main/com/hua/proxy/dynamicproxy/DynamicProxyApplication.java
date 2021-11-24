@@ -18,21 +18,24 @@ import java.lang.reflect.Proxy;
  * 2. java.lang.reflect.InvocationHandler: 这里称他为"调用处理器"，他是一个接口，我们动态生成的代理类需要完成的具体内容需要自己定义一个类，而这个类必须实现 InvocationHandler 接口。<br/>
  */
 public class DynamicProxyApplication {
-    public static void main(String[] args) {
-        RealSubject realSubject = new RealSubject();// 创建委托对象
-        ProxyHandler handler = new ProxyHandler(realSubject);
-        // 动态生成代理对象
-        Subject proxySubject = (Subject) Proxy.newProxyInstance(RealSubject.class.getClassLoader(), RealSubject.class.getInterfaces(), handler);
-        // 通过代理对象调用方法
-        proxySubject.request();
-    }
+	public static void main(String[] args) {
+		RealSubject realSubject = new RealSubject();// 创建委托对象
+		ProxyHandler handler = new ProxyHandler(realSubject);
+		// 动态生成代理对象
+		Subject proxySubject = (Subject) Proxy.newProxyInstance(
+		        RealSubject.class.getClassLoader(),
+                RealSubject.class.getInterfaces(),
+                handler);
+		// 通过代理对象调用方法
+		proxySubject.request();
+	}
 }
 
 /**
  * 接口
  */
 interface Subject {
-    void request();
+	void request();
 }
 
 /**
@@ -40,26 +43,26 @@ interface Subject {
  */
 class RealSubject implements Subject {
 
-    @Override
-    public void request() {
-        System.out.println("RealSubject Request");
-    }
+	@Override
+	public void request() {
+		System.out.println("RealSubject Request");
+	}
 }
 
 class ProxyHandler implements InvocationHandler {
 
-    private Subject subject;
+	private Subject subject;
 
-    public ProxyHandler(Subject subject) {
-        this.subject = subject;
-    }
+	public ProxyHandler(Subject subject) {
+		this.subject = subject;
+	}
 
-    @Override
-    public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
-        // 定义预处理的工作，可以根据method的不同进行不同的处理工作
-        System.out.println("before");
-        Object result = method.invoke(subject, args);
-        System.out.println("after");
-        return result;
-    }
+	@Override
+	public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
+		// 定义预处理的工作，可以根据method的不同进行不同的处理工作
+		System.out.println("before");
+		Object result = method.invoke(subject, args);
+		System.out.println("after");
+		return result;
+	}
 }
